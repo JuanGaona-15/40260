@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE direccion SYSTEM = "gramatica.dtd" >
+<receta>
+  <instruccion id="r1" prioridad="alta">
+    <accion>precalentar</accion>
+    <objetivo>horno</objetivo>
+    <parametros>
+      <parametro nombre="temperatura">180C</parametro>
+    </parametros>
+  </instruccion>
+
+  <instruccion id="r2">
+    <accion>mezclar</accion>
+    <ingredientes>
+      <ingrediente cantidad="2" unidad="tazas">harina</ingrediente>
+      <ingrediente cantidad="1" unidad="taza">azucar</ingrediente>
+      <ingrediente cantidad="2" unidad="piezas">huevos</ingrediente>
+    </ingredientes>
+    <parametros>
+      <parametro nombre="tiempo">5 minutos</parametro>
+    </parametros>
+  </instruccion>
+
+  <instruccion id="r3">
+    <accion>hornear</accion>
+    <objetivo>mezcla</objetivo>
+    <parametros>
+      <parametro nombre="tiempo">30 minutos</parametro>
+      <parametro nombre="temperatura">180C</parametro>
+    </parametros>
+  </instruccion>
+
+  <instruccion id="r4">
+    <accion>dejar enfriar</accion>
+    <objetivo>pastel</objetivo>
+  </instruccion>
+</receta>

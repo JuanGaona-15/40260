@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE direccion SYSTEM = "xml-00.dtd" >
+<direccion>
+    <nombre-completo>
+        <nombre>Juan Luis</nombre>
+        <apellidos>Gaona Aguirre</apellidos>
+    </nombre-completo>
+    <correo>zs240137337@uv.mx</correo>
+    <telefono>2281123456</telefono>
+    <cumple>
+        <dia>15</dia>
+        <mes>02</mes>
+        <anio>2000</anio>
+    </cumple>
+</direccion>
