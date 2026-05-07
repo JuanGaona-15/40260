@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">Titulo</h1>
+    <p id="b">Esto es un parrafo</p>
+    <button id="c" onclick = "escribe()">Hola</button>
+    <input type="text">
+    <button id="d">color</button>
+    
+    <script>
+        //Esto es un comentario
+        const elemento = "cadena"
+        //var elemento = 0
+        let arreglo = [1,2,3,4]
+        console.log(arreglo[0])
+
+        for (const key in elemento) {
+            console.log(elemento[key])            
+        }
+
+        for(i=0; i<elemento.length; i++){
+            console.log(elemento[i])
+        }
+
+
+        /*Funciones
+        function saludar (){
+            console.log("Hola mundo")
+        }
+
+        for(i=0; i<10; i++){
+            if(i == 5){
+                saludar();
+            }
+        }
+        */
+
+    let boton = document.getElementsByTagName("c")
+    console.log(boton)
+
+    function escribe(){
+        //Acceso al DOM  = DOCUMENTO OBJECT MODEL
+        console.log(document.URL)
+        const html = document.getElementById("b")
+        console.log(html.innerText)
+        html.innerText = "Esto es un nuevo texto"
+
+        //recuperar informacion del input
+        let entrada = document.getElementsByTagName("input")
+        console.log(entrada[0].value)
+        html.innerText = entrada[0].value
+
+        /*for (const key in entrada) {
+            if (Object.prototype.hasOwnProperty.call(entrada,key)){     
+            const element = entrada[key];
+            console.log(element)}
+        }*/
+    }
+
+    let color = document.getElementById("d")
+    color.addEventListener("click", cambiarColor)
+
+    function cambiarColor(){
+        let entrada = document.getElementsByTagName("input")
+        let Titulo = document.getElementById("a")
+        Titulo.style.color = entrada[0].value
+    }
+    </script>
+</body>
+</html>

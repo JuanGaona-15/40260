@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="a">Titulo</h1>
+    <p id="b">Esto es un parrafo</p>
+    <button id="c" onclick = "escribe()">Hola</button>
+    <input type="text">
+    <button id="d">color</button>
+    <br>
+    <input type="text" id = "n1">
+    <input type="text" id = "n2">
+    <button id = "suma">suma</button>
+
+    <script>
+        //funcion anonima
+        const x = function (a,b){return a+b}
+        let sumaBoton = document.getElementById("suma")
+        /*suma.addEventListener("click",function(){
+            let a = document.getElementById("n1").value
+            let b = document.getElementById("n2").value      
+            let resultado = x(a,b)
+            document.getElementById("b").innerText = resultado
+        })*/
+
+        //funcion flecha
+       sumaBoton.addEventListener("click",()=>{
+            let a = document.getElementById("n1").value
+            let b = document.getElementById("n2").value      
+            let resultado = x(a,b)
+            document.getElementById("b").innerText = resultado
+       })
+    </script>
+</body>
+</html>
